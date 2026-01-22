@@ -1,0 +1,10 @@
+keepalived_router_id: WN3_INGRESS_VIP
+
+vrrp:
+  name: VI_INGRESS
+  interface: ens160
+  vrid: 200
+  priority: 140
+  advert_int: 1
+  auth_pass: ingvip01
+  vip: 10.2.2.101/24

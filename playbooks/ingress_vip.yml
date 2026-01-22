@@ -1,0 +1,6 @@
+---
+- name: Configure Keepalived for Ingress VIP
+  hosts: ingress_vip
+  become: true
+  roles:
+    - keepalived
